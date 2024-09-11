@@ -5,7 +5,6 @@ import cowok from '../assets/images/male.png';
 // Membuat Context
 export const PeopleContext = createContext();
 
-// Membuat Provider untuk membungkus komponen-komponen yang membutuhkan akses ke context
 export const PeopleProvider = ({ children }) => {
   const [people] = useState([
     {
@@ -86,7 +85,7 @@ export const PeopleProvider = ({ children }) => {
         photo: cowok
       },
   ]);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Status login
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const login = () => setIsLoggedIn(true);
   const logout = () => setIsLoggedIn(false);

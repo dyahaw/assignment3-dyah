@@ -5,9 +5,7 @@ const Login = () => {
   const router = useRouter();
 
   const handleLogin = () => {
-    // Logika yang akan dijalankan saat tombol login ditekan
     console.log('Tombol Login ditekan');
-    // Redirect ke halaman dashboard atau halaman lain
     router.push('/team');
   };
 

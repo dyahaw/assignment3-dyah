@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css'; // Menghubungkan file CSS
+import './Home.css';
 import digistarImage from '../assets/digistarclass.jpg';
 
 const Home = () => {

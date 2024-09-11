@@ -65,20 +65,20 @@
 .App.light {
   --background-color: #ffffff;
   --text-color: #000000;
-  --header-background: #ffffff; /* Warna header */
-  --header-text-color: #000000; /* Teks header */
-  --footer-background: #ffffff; /* Warna footer */
-  --footer-text-color: #000000; /* Teks footer */
+  --header-background: #ffffff;
+  --header-text-color: #000000;
+  --footer-background: #ffffff;
+  --footer-text-color: #000000;
 }
 
 /* Dark Mode */
 .App.dark {
   --background-color: #333333;
   --text-color: #ffffff;
-  --header-background: #000000; /* Warna header */
-  --header-text-color: #ffffff; /* Teks header */
-  --footer-background: #000000; /* Warna footer */
-  --footer-text-color: #ffffff; /* Teks footer */
+  --header-background: #000000;
+  --header-text-color: #ffffff;
+  --footer-background: #000000;
+  --footer-text-color: #ffffff;
   --card-text: #ffffff;
 }
 
@@ -90,22 +90,19 @@
 .header {
   background-color: var(--header-background);
   color: var(--header-text-color);
-  /* Tambahkan styling lain yang diperlukan untuk header */
 }
+
 .header nav ul li a {
-  color: var(--header-text-color); /* Pastikan link di header memiliki warna teks yang sesuai */
+  color: var(--header-text-color);
 }
 
 .header nav ul li a.active {
-  color: var(--text-color); /* Warna untuk link aktif jika diperlukan */
+  color: var(--text-color);
 }
 
-/* Tambahkan styling untuk tombol login/logout jika diperlukan */
 .login-button {
-  color: var(--header-text-color); /* Warna teks tombol login/logout */
+  color: var(--header-text-color);
 }
-
-/* Update styles for cards and other elements to use CSS variables */
 
 .email {
   color: var(--text-color);
@@ -121,14 +118,13 @@
   color: var(--footer-text-color);
 }
 
-/* Styling untuk teks di pojok kiri bawah */
 .author-text {
   color: var(--footer-text-color);
   text-align: left;
   padding: 10px;
-  font-size: 14px; /* Ukuran font */
+  font-size: 14px;
 }
 
 .card-content {
-  color: var(--card-text); /* Warna teks sesuai mode */
+  color: var(--card-text);
 }

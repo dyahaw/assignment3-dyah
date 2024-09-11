@@ -1,7 +1,7 @@
 import React from 'react';
-import './AboutMe.css';  // Pastikan path ini sesuai dengan struktur proyekmu
-import profilePhoto from '../assets/images/dyahayuw.jpg'; // Ganti dengan path yang sesuai
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // Import ikon yang diperlukan
+import './AboutMe.css';
+import profilePhoto from '../assets/images/dyahayuw.jpg';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const AboutMe = () => {
   return (

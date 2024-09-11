@@ -16,12 +16,12 @@
   display: flex;
   justify-content: left;
   gap: 80px;
-  margin: 0; /* Hapus margin default */
-  padding: 0; /* Hapus padding default */
+  margin: 0;
+  padding: 0;
 }
 
 .header ul li {
-  display: inline; /* Menjadikan item list berbaris secara horizontal */
+  display: inline;
 }
 
 .header ul li a {
@@ -38,8 +38,8 @@
   display: flex;
   align-items: center;
   position: absolute;
-  top: 10px; /* Jarak dari atas */
-  right: 10px; /* Jarak dari kanan */
+  top: 10px;
+  right: 10px;
 }
 
 .login-button {
@@ -51,7 +51,6 @@
   border-radius: 5px;
 }
 
-/* Styling untuk tombol toggle tema */
 .theme-button {
   background-color: var(--button-background);
   color: var(--button-text);
@@ -59,10 +58,9 @@
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
-  margin-right: 110px; /* Memberi jarak antara tombol login dan tombol toggle tema */
+  margin-right: 110px;
 }
 
-/* Gaya tambahan untuk dark mode */
 .dark-mode .header {
   background-color: black;
 }
@@ -72,7 +70,6 @@
   color: white;
 }
 
-/* Gaya tambahan untuk light mode */
 .light-mode .header {
   background-color: white;
 }
@@ -82,7 +79,6 @@
   color: black;
 }
 
-/* Styling untuk link aktif */
 .active {
   font-weight: bold;
 }

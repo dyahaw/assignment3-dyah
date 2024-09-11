@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    margin: 50px 10% 0; /* Jarak atas 40px, kiri/kanan 10% */
+    margin: 50px 10% 0;
   }
 
   .about-me-photo {
@@ -52,5 +52,5 @@
   }
 
   .social-icon:hover {
-    color: #007bff; /* Ubah warna saat hover jika diperlukan */
+    color: #007bff;
   }

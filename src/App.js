@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Header from "./components/Header";
@@ -13,7 +13,7 @@ import digistarClassLogo from './digi.png';
 import telkomIndonesiaLogo from './telind.png';
 
 function App() {
-  const [theme, setTheme] = useState('light'); // Tambahkan state tema
+  const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
@@ -22,7 +22,7 @@ function App() {
   return (
     <PeopleProvider>
       <Router>
-        <div className={`App ${theme}`}> {/* Tambahkan class tema */}
+        <div className={`App ${theme}`}> {}
           <Header toggleTheme={toggleTheme} />
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />

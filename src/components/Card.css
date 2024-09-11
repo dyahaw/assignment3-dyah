@@ -71,7 +71,7 @@
 }
 
 .card-content {
-  color: var(--card-text); /* Pastikan ini mengarah ke variabel yang benar */
+  color: var(--card-text);
 }
 
 .email {

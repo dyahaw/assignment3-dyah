@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { PeopleContext } from '../context/PeopleContext';
 import './Header.css';
 
-const Header = ({ toggleTheme }) => { // Ambil prop toggleTheme
+const Header = ({ toggleTheme }) => {
   const { isLoggedIn, login, logout } = useContext(PeopleContext);
   const navigate = useNavigate();
 

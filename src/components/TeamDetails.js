@@ -3,12 +3,11 @@ import { useParams } from 'react-router-dom';
 import { PeopleContext } from '../context/PeopleContext';
 
 const TeamDetails = () => {
-  const { id } = useParams(); // Mengambil parameter ID dari URL
-  const { people } = useContext(PeopleContext); // Mengakses data dari context
+  const { id } = useParams();
+  const { people } = useContext(PeopleContext);
   const [person, setPerson] = useState(null);
 
   useEffect(() => {
-    // Menyaring data untuk mendapatkan detail anggota berdasarkan ID
     const personDetails = people.find((p) => p.id === parseInt(id));
     setPerson(personDetails);
   }, [id, people]);
@@ -22,7 +21,7 @@ const TeamDetails = () => {
 
 
   if (!person) {
-    return <div>Loading...</div>; // Tampilkan loading sementara data sedang diambil
+    return <div>Loading...</div>;
   }
 
   return (
